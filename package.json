@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "dotenv": "^6.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "REACT_APP_ENV=development react-scripts start",
-    "start:staging": "REACT_APP_ENV=staing react-scripts start",
-    "start:production": "REACT_APP_ENV=production react-scripts start",
+    "start": "cp ./.env.dev ./.env && react-scripts start",
+    "start:staging": "cp ./.env.staging ./.env && react-scripts start",
+    "start:production": "cp ./.env.prod ./.env && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
