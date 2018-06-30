@@ -1,0 +1,26 @@
+{
+  "name": "environment-config-example",
+  "version": "1.0.0",
+  "description": "set up environment ( dev, staging, production )",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node app.js",
+    "start:staging": "NODE_ENV=staging node app.js",
+    "start:production": "NODE_ENV=production node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoBinLee/environment-config-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoBinLee/environment-config-example/issues"
+  },
+  "homepage": "https://github.com/BoBinLee/environment-config-example#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3"
+  }
+}
