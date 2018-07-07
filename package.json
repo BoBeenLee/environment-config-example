@@ -10,9 +10,9 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "./scripts/pre-build.sh development & react-native-scripts start",
-    "start:staging": "./scripts/pre-build.sh staging & react-native-scripts start",
-    "start:production": "./scripts/pre-build.sh production & react-native-scripts start",
+    "start": "./scripts/pre-build.sh development && react-native-scripts start",
+    "start:staging": "./scripts/pre-build.sh staging && react-native-scripts start",
+    "start:production": "./scripts/pre-build.sh production && react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
